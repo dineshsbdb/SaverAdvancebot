@@ -57,7 +57,7 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://i.postimg.cc/3NnZQdx9/IMG-20241228-220355-683.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/+jU6OO-nHTrAxNmY1")
+        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/+ak9f2iaefjBhMTQ1")
         premium = InlineKeyboardButton("Get Premium", url="https://t.me/ilaps")  # Callback for Help button
         keyboard = InlineKeyboardMarkup([
             [join_button],  # First button
@@ -71,7 +71,7 @@ async def token_handler(client, message):
                 "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
                 "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more. \n\n"
                 "> Must check /terms, /plan & /help\n\n"
-                "> 👉 **__Note:__** Initiate /set to auto setup bot commands (owner only)"
+               # "> 👉 **__Note:__** Initiate /set to auto setup bot commands (owner only)"
             ),
             reply_markup=keyboard
         )
