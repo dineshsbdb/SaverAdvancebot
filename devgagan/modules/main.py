@@ -42,7 +42,7 @@ async def check_interval(user_id, freecheck):
         cooldown_end = interval_set[user_id]
         if now < cooldown_end:
             remaining_time = (cooldown_end - now).seconds // 60
-            return False, f"Please wait {remaining_time} minute(s) before sending another link. Alternatively, purchase premium for instant access.\n\n> Hey 👋 You can use /token to use the bot free for 3 hours without any time limit."
+            return False, f"Please wait {remaining_time} minute(s) before sending another link. Alternatively, purchase premium for instant access.\n\n> Buy Premium."
         else:
             del interval_set[user_id]  
 
@@ -224,7 +224,7 @@ async def batch_link(_, message):
         return
 
  
-    join_button = InlineKeyboardButton("Join Channel", url="https://t.me/PaidCourseMegaLinkss")
+    join_button = InlineKeyboardButton("Join Channel", url="https://t.me/PaidCourseMegaLinks")
     keyboard = InlineKeyboardMarkup([[join_button]])
 
     
